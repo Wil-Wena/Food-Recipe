@@ -71,10 +71,18 @@ console.log(`The bill was ${bill}, the tip was ${tip} and total value is ${bill 
 
 //Functions
 
-function calMarkBmi(mass, height) {
+/* function calMarkBmi(mass, height) {
     const formula = mass* height **2;
     console.log(`Mark is ${mass}kg and ${height} of height. His BMI is ${formula}.`);
     return 0;
 }
 
-calMarkBmi(34,1.7)
+calMarkBmi(34,1.7) */
+
+const calMarkBmi = function (mass, height) {
+    const formula = mass * height ** 2;
+    console.log(`Mark is ${mass}kg and ${height} of height. His BMI is ${formula}.`);
+    return 0;
+}
+
+calMarkBmi(34, 11)
