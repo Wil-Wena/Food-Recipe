@@ -79,10 +79,59 @@ console.log(`The bill was ${bill}, the tip was ${tip} and total value is ${bill 
 
 calMarkBmi(34,1.7) */
 
-const calMarkBmi = function (mass, height) {
+/* const calMarkBmi = function (mass, height) {
     const formula = mass * height ** 2;
     console.log(`Mark is ${mass}kg and ${height} of height. His BMI is ${formula}.`);
     return 0;
 }
 
-calMarkBmi(34, 11)
+calMarkBmi(34, 11) */
+
+
+
+//Arrow expression
+/* const calMarkBmi = (mass, height) => mass * height ** 2;
+
+console.log(calMarkBmi(23,23)); */
+
+
+
+//Functions Project
+
+/* const calcAverage = (a, b, c) => (a + b + c) / 3;
+ *//* const dolAverage = calcAverage(44,23,71);
+console.log(dolAverage);
+
+const koalasAverage = calcAverage(65,54,49);
+console.log(koalasAverage); */
+
+/* function checkWinner() {
+    const dataDol1 = calcAverage(44, 23, 71);
+    const dataDol2 = calcAverage(85, 54, 41);
+    const dataKo1 = calcAverage(65, 54, 49);
+    const dataKo2 = calcAverage(23, 24, 27);
+
+
+    if (dataDol1 > dataKo1) {
+        console.log(`Dolphin win (${dataDol1} vs ${dataKo1}.)`);
+    } else if (dataDol1 < dataKo1) {
+        console.log(`Koals win (${dataKo1} vs ${dataDol1}.)`);
+    }
+    if (dataDol2 < dataKo2) {
+        console.log(`Koalas win (${dataKo2} vs ${dataDol2}.)`);
+    }
+    else if (dataDol2 > dataKo2) {
+        console.log(`Dophin win (${dataDol2} vs ${dataKo1}.)`);
+    }
+    if (dataDol1 === dataKo1 || dataDol2 === dataKo2) {
+        console.log(`Dophin draw with Koala (${dataDol2} vs ${dataKo1}.)`);
+    
+    }
+}
+
+checkWinner(); */
+
+
+
+
+
