@@ -180,7 +180,7 @@ const totals = [billsData[0]+tipsData[0]] */
 
 //Objects
 
-const wilson ={
+/* const wilson ={
     firstName: 'Wilson',
     lastName: 'Aballey',
     age: 25,
@@ -191,3 +191,62 @@ console.log(wilson.friends[0])
 //const interestIn = prompt("What do you want to know?");
 
 console.log(`${wilson.firstName} has ${wilson.friends.length}, and his bestfriend is ${wilson.friends[0]}`)
+ */
+
+//Objects Methods
+/* const wilson = {
+    firstName: 'Wilson',
+    lastName: 'Aballey',
+    birthYear: 2000,
+    job: 'programmer',
+    friends: ['Kofi', 'Biggie'],
+    hasDriverLincense: true,
+    /* calAge: function () {
+        return 2025 - this.birthYear;
+    } */
+/*  calAge: function () {
+     this.age = 2025 - this.birthYear
+     return this.age;
+ },
+ getSummary: function () {
+     console.log(`${this.firstName} is a ${this.calAge()} year old ${this.job} and he ${this.hasDriverLincense === true ? 'has a drivers lincense' : 'has no drivers lincense'}
+`)
+ }
+
+};
+
+wilson.getSummary() */
+
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi
+    }
+}
+
+const wilson = {
+    fullName: 'Wilson Aballey',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi
+    }
+}
+console.log(mark.calcBMI(), wilson.calcBMI());
+
+if (mark.bmi > wilson.bmi) {
+    console.log(`Marks weights ${mark.mass} kg and is ${mark.height}m tall 
+Wilson weights ${wilson.mass} kg and is ${wilson.height}m tall`)
+} else if (wilson.bmi > mark.bmi) {
+    console.log(`Wilson weights ${wilson.mass} kg and is ${wilson.height}m tall`)
+
+} else {
+    console.log('N/A')
+}
+
