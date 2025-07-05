@@ -131,7 +131,25 @@ console.log(koalasAverage); */
 
 checkWinner(); */
 
+//Arrays
+const friends = ['Mike','Wil','Frank','Bro'];
 
+const newLength = friends.push('Willy Wallet');
+console.log(newLength)
+
+
+friends.unshift('Michael')
+const m = friends.pop();
+console.log(m)
+
+friends.unshift('Sinner')
+
+console.log(friends.indexOf('Bro'));
+
+console.log(friends);
+
+console.log(friends.includes('Frank'))
+console.log(friends.includes('Bobby'))
 
 
 
