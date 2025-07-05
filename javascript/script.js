@@ -155,7 +155,7 @@ console.log(friends.includes('Bobby'))
 
 //Array Project
 
-function calcTip(bill) {
+/* function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
         const m = bill * 0.15
         console.log(`Wilson has a bill of ${bill} and a tip of ${m}`)
@@ -176,5 +176,18 @@ const totals = [bills[0] + tips[0]]
 
 const tipsData = [billsData[0],billsData[1],billsData[billsData.length-1]]
 const totals = [billsData[0]+tipsData[0]] */
-console.log(tips, totals)
+//console.log(tips, totals) */
 
+//Objects
+
+const wilson ={
+    firstName: 'Wilson',
+    lastName: 'Aballey',
+    age: 25,
+    friends: ['Kofi','Biggie']
+};
+
+console.log(wilson.friends[0])
+//const interestIn = prompt("What do you want to know?");
+
+console.log(`${wilson.firstName} has ${wilson.friends.length}, and his bestfriend is ${wilson.friends[0]}`)
