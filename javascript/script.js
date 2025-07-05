@@ -132,7 +132,7 @@ console.log(koalasAverage); */
 checkWinner(); */
 
 //Arrays
-const friends = ['Mike','Wil','Frank','Bro'];
+/* const friends = ['Mike','Wil','Frank','Bro'];
 
 const newLength = friends.push('Willy Wallet');
 console.log(newLength)
@@ -150,6 +150,31 @@ console.log(friends);
 
 console.log(friends.includes('Frank'))
 console.log(friends.includes('Bobby'))
+ */
 
 
+//Array Project
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        const m = bill * 0.15
+        console.log(`Wilson has a bill of ${bill} and a tip of ${m}`)
+        //console.log(m)
+        return m;
+    } else {
+        const m = bill * 0.20
+        console.log(`Wilson has a bill of ${bill} and a tip of ${m}`)
+        return m;
+    }
+}
+
+const bills = [125,555,44];
+const tips = [calcTip(bills[0])]
+const totals = [bills[0] + tips[0]]
+
+/* const billsData = [calcTip(125), calcTip(555), calcTip(44)]
+
+const tipsData = [billsData[0],billsData[1],billsData[billsData.length-1]]
+const totals = [billsData[0]+tipsData[0]] */
+console.log(tips, totals)
 
