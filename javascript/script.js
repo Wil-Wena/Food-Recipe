@@ -1,4 +1,4 @@
-'use script';
+"use script";
 
 /* let markMass = 78;
 let markHeight = 1.69;
@@ -19,7 +19,6 @@ const firstName = 'Wilson'
 const printDetails = `I'm ${firstName} and I'm ${ageWilson} years of age.`
 
 console.log(printDetails) */
-
 
 //Boolean
 /* const hasDrivers = true;
@@ -57,7 +56,6 @@ if (averageDolphin > averageKoalas && averageDolphin >= 100) {
 }
   */
 
-
 /* const age = 19;
 
 age>18 ? console.log('What time is it?') : console.log('Fuck off Moron'); */
@@ -67,7 +65,6 @@ let tip;
 (bill >= 50 || bill <= 300) ? tip = 0.15 * bill : tip = 0.20 * bill;
 
 console.log(`The bill was ${bill}, the tip was ${tip} and total value is ${bill + tip}`); */
-
 
 //Functions
 
@@ -87,19 +84,15 @@ calMarkBmi(34,1.7) */
 
 calMarkBmi(34, 11) */
 
-
-
 //Arrow expression
 /* const calMarkBmi = (mass, height) => mass * height ** 2;
 
 console.log(calMarkBmi(23,23)); */
 
-
-
 //Functions Project
 
 /* const calcAverage = (a, b, c) => (a + b + c) / 3;
- *//* const dolAverage = calcAverage(44,23,71);
+ */ /* const dolAverage = calcAverage(44,23,71);
 console.log(dolAverage);
 
 const koalasAverage = calcAverage(65,54,49);
@@ -151,7 +144,6 @@ console.log(friends);
 console.log(friends.includes('Frank'))
 console.log(friends.includes('Bobby'))
  */
-
 
 //Array Project
 
@@ -217,8 +209,7 @@ console.log(`${wilson.firstName} has ${wilson.friends.length}, and his bestfrien
 
 wilson.getSummary() */
 
-
-const mark = {
+/* const mark = {
     fullName: 'Mark Miller',
     mass: 78,
     height: 1.69,
@@ -249,4 +240,57 @@ Wilson weights ${wilson.mass} kg and is ${wilson.height}m tall`)
 } else {
     console.log('N/A')
 }
+ */
 
+//LOOPS
+/* for (let rep = 1; rep <= 10; rep += 1) {
+    console.log(`${++rep} 🫡🫡🫡🫡`)
+} */
+/* const wilson = [
+    'Wilson',
+    'Aballey',
+    25,
+    ['Kofi', 'Biggie']
+] */
+/* const types = [];
+for (let i = 0; i < wilson.length; i++) {
+    console.log(wilson[i]);
+
+    types.push(typeof wilson[i])
+}
+
+console.log(types) */
+
+/* 
+for (let i = wilson.length - 1; i >= 0; --i) {
+    console.log(i, wilson[i])
+} */
+
+/* let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !==6) {
+    console.log(`You rolled a ${dice}`)
+    dice = Math.trunc(Math.random() * 6) + 1;
+} */
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+  let m = calcTip(bills[i]);
+  tips.push(m);
+  totals.push(m + bills[i]);
+}
+
+console.log(tips, totals);
+
+function calcAverage(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum / arr.length;
+}
+console.log(calcAverage(totals));
