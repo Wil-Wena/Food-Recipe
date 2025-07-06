@@ -1,4 +1,4 @@
-"use script";
+"use script"; /* const dolAverage = calcAverage(44,23,71);
 
 /* let markMass = 78;
 let markHeight = 1.69;
@@ -92,11 +92,11 @@ console.log(calMarkBmi(23,23)); */
 //Functions Project
 
 /* const calcAverage = (a, b, c) => (a + b + c) / 3;
- */ /* const dolAverage = calcAverage(44,23,71);
-console.log(dolAverage);
+ */
+// console.log(dolAverage);
 
-const koalasAverage = calcAverage(65,54,49);
-console.log(koalasAverage); */
+// const koalasAverage = calcAverage(65,54,49);
+// console.log(koalasAverage);
 
 /* function checkWinner() {
     const dataDol1 = calcAverage(44, 23, 71);
@@ -295,15 +295,56 @@ while (dice !==6) {
 // }
 // console.log(calcAverage(totals));
 // console.log();
-const testData1 = [17, 21, 23];
-const testData2 = [12, 5, -5, 0, 4];
-const printForecast = function (arr) {
-  let str = "";
-  for (let i = 0; i < arr.length; i++) {
-    const m = `...${arr[i]}C in ${i + 1} days`;
-    str += m;
+// const testData1 = [17, 21, 23];
+// const testData2 = [12, 5, -5, 0, 4];
+// const printForecast = function (arr) {
+//   let str = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     const m = `...${arr[i]}C in ${i + 1} days`;
+//     str += m;
+//   }
+//   console.log(str);
+// };
+// printForecast(testData1);
+// printForecast(testData2);
+
+const testData = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+function receiveHours(arr) {
+  //Total Hours
+  let sum = 0;
+  for (i = 0; i < arr.length; i++) {
+    sum += arr[i];
   }
-  console.log(str);
-};
-printForecast(testData1);
-printForecast(testData2);
+  console.log(sum);
+  if (sum >= 35) {
+    console.log("The person worked full time");
+  } else {
+    console.log("The person worked part-time");
+  }
+  //Average Hours
+  const averageHours = Math.round(sum / arr.length);
+  console.log(averageHours);
+  //Day with Highest Hour
+  let max = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  console.log(max);
+
+  //Number of days worked
+  //   let count = 0;
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] > 0) {
+  //       count++;
+  //       console.log(arr[i]);
+  //     }
+  //   }
+  let count = arr.filter((item) => item > 0).length;
+  console.log(count);
+
+  return { sum, averageHours, max, count };
+}
+
+receiveHours(testData);
